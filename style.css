@@ -1,0 +1,219 @@
+/* Loader */
+#loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #2f94e6, #1e5799);
+    z-index: 9999;
+}
+
+.loader-spinner {
+    font-size: 40px;
+    color: #fff;
+}
+
+/* Screens */
+.screen {
+    display: none;
+    padding: 20px;
+    background: linear-gradient(to bottom, #2f94e6, #1e5799);
+}
+
+.screen h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* Song Card */
+.song-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #2f94e6, #1e5799);
+    /* Replace with your desired gradient colors */
+    /* You can customize the gradient direction and colors as per your preference */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Adjust the desired height */
+    width: 400px; /* Adjust the desired width */
+}
+
+.song-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.song-card h4,
+.song-card p {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px; /* Adjust the desired font size */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background-color: #2989d8;
+    transition: width 0.3s ease-in-out;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Navigation */
+header {
+    background: linear-gradient(to right, #2f94e6, #1e5799);
+    padding: 10px;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Adjust the desired height */
+    width: 300px; /* Adjust the desired width */
+}
+
+.song-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite;
+}
+
+.song-card h4,
+.song-card p {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px; /* Adjust the desired font size */
+}
+
+.song-card .song-details {
+    flex-grow: 1;
+    /* Add other desired styling properties */
+}
+
+.song-card .progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #ccc;
+    /* Add other desired styling properties */
+}
+
+.song-card .progress {
+    height: 100%;
+    background-color: #2f75bb;
+    /* Add other desired styling properties */
+}
+
+body {
+    background-color: #1e5799;
+    /* Replace with your desired color */
+}
+/* Add these styles to your CSS file */
+
+.song-list {
+  list-style: none;
+  padding: 0;
+}
+
+.song-list-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.song-list-item:hover {
+  background-color: #f2f2f2;
+}
+
+.song-title {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.artist-name {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Optional: Add additional styling to the active song */
+
+.song-list-item.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music & I</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/b9ba23b21e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-spinner"><i class="fas fa-spinner fa-spin"></i></div>
+    </div>
+
+    <header>
+        <h1>Music & I</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="homeButton"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" id="songsButton"><i class="fas fa-music"></i> Songs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="homeScreen" class="screen active">
+            <h2>Now Playing</h2>
+            <div class="song-card" id="nowPlaying">
+                <div class="avatar">
+                    <img src="/placeholder.jpg" alt="Avatar">
+                </div>
+                <div class="song-details">
+                    <h4>Song Title</h4>
+                    <p>Artist</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <div class="controls">
+                    <button id="prevButton"><i class="fas fa-step-backward"></i></button>
+                    <button id="playPauseButton"><i class="fas fa-play"></i></button>
+                    <button id="nextButton"><i class="fas fa-step-forward"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="songsScreen" class="screen">
+            <h2>All Songs</h2>
+            <div class="song-list">
+                <!-- Add list of songs here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
